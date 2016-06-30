@@ -12,6 +12,8 @@
 		55583AA21D2594AB00846BA5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55583AA01D2594AB00846BA5 /* Main.storyboard */; };
 		55583AA41D2594AB00846BA5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 55583AA31D2594AB00846BA5 /* Assets.xcassets */; };
 		55583AA71D2594AB00846BA5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55583AA51D2594AB00846BA5 /* LaunchScreen.storyboard */; };
+		55583AAF1D2594BD00846BA5 /* Board.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55583AAE1D2594BD00846BA5 /* Board.swift */; };
+		55583AB11D2594CA00846BA5 /* Field.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55583AB01D2594CA00846BA5 /* Field.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		55583AA31D2594AB00846BA5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		55583AA61D2594AB00846BA5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		55583AA81D2594AB00846BA5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		55583AAE1D2594BD00846BA5 /* Board.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Board.swift; sourceTree = "<group>"; };
+		55583AB01D2594CA00846BA5 /* Field.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Field.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,8 @@
 				55583AA31D2594AB00846BA5 /* Assets.xcassets */,
 				55583AA51D2594AB00846BA5 /* LaunchScreen.storyboard */,
 				55583AA81D2594AB00846BA5 /* Info.plist */,
+				55583AAE1D2594BD00846BA5 /* Board.swift */,
+				55583AB01D2594CA00846BA5 /* Field.swift */,
 			);
 			path = TicTacToe;
 			sourceTree = "<group>";
@@ -137,6 +143,8 @@
 			files = (
 				55583A9F1D2594AB00846BA5 /* ViewController.swift in Sources */,
 				55583A9D1D2594AB00846BA5 /* AppDelegate.swift in Sources */,
+				55583AB11D2594CA00846BA5 /* Field.swift in Sources */,
+				55583AAF1D2594BD00846BA5 /* Board.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

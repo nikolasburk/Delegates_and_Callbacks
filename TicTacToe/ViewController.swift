@@ -10,16 +10,30 @@ import UIKit
 
 class ViewController: UIViewController {
 
+  var board: Board!
+  
   override func viewDidLoad() {
     super.viewDidLoad()
-    // Do any additional setup after loading the view, typically from a nib.
+
+    board = Board(fieldWidth: 100, fieldHeight: 100)
+    view.addSubview(board)
+    board.center = view.center
+
+    board.callback = { (xPosition: Int, yPosition: Int) in
+      print("fieldWasTappedAtPosition \(xPosition), \(yPosition) - callback")
+    }
+    board.delegate = self
+  
   }
+  
+  
+}
 
-  override func didReceiveMemoryWarning() {
-    super.didReceiveMemoryWarning()
-    // Dispose of any resources that can be recreated.
+extension ViewController: BoardDelegate {
+  
+  func fieldWasTappedAtPosition(xPosition: Int, yPosition: Int) {
+    print("fieldWasTappedAtPosition \(xPosition), \(yPosition) - delegate")
   }
-
-
+  
 }
 
