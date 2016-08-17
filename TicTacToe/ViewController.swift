@@ -19,21 +19,25 @@ class ViewController: UIViewController {
     view.addSubview(board)
     board.center = view.center
 
-    board.callback = { (xPosition: Int, yPosition: Int) in
-      print("fieldWasTappedAtPosition \(xPosition), \(yPosition) - callback")
-    }
-    board.delegate = self
+//    board.callback = { (xPosition: Int, yPosition: Int) in
+//      print("fieldWasTappedAtPosition \(xPosition), \(yPosition) - callback")
+//    }
+//    board.delegate = self
   
+    func fieldWasTappedAtPosition(xPosition: Int, yPosition: Int) {
+      
+    }
+    
   }
   
   
 }
 
-extension ViewController: BoardDelegate {
-  
-  func fieldWasTappedAtPosition(xPosition: Int, yPosition: Int) {
-    print("fieldWasTappedAtPosition \(xPosition), \(yPosition) - delegate")
-  }
-  
-}
+//extension ViewController: BoardDelegate {
+//  
+//  func fieldWasTappedAtPosition(xPosition: Int, yPosition: Int) {
+//    print("fieldWasTappedAtPosition \(xPosition), \(yPosition) - delegate")
+//  }
+//  
+//}
 

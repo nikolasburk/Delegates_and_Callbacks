@@ -14,8 +14,8 @@ protocol BoardDelegate: class {
 
 class Board: UIView {
 
-  weak var delegate: BoardDelegate?
-  var callback: ((Int, Int) -> ())?
+//  weak var delegate: BoardDelegate?
+//  var callback: ((Int, Int) -> ())?
   
   init(fieldWidth: CGFloat, fieldHeight: CGFloat) {
     
@@ -46,12 +46,12 @@ class Board: UIView {
 
   func handleTap(tap: UITapGestureRecognizer) {
     
-    let tappedField = tap.view as! Field
-    print("handle tap at position: (\(tappedField.xPosition), \(tappedField.yPosition))")
-    
-    callback?(tappedField.xPosition, tappedField.yPosition)
-    delegate?.fieldWasTappedAtPosition(tappedField.xPosition, yPosition: tappedField.yPosition)
-    
+//    let tappedField = tap.view as! Field
+//    print("handle tap at position: (\(tappedField.xPosition), \(tappedField.yPosition))")
+//    
+//    callback?(tappedField.xPosition, tappedField.yPosition)
+//    delegate?.fieldWasTappedAtPosition(tappedField.xPosition, yPosition: tappedField.yPosition)
+//    
   }
   
 }
